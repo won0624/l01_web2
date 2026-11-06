@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: skyblue;
+            transition: 1s;
+        }
+        .bgcolor--gray{
+            background-color: lightgray;
+        }
+        .bgcolor--red {
+            background-color: red;
+            }
+        .bgcolor--yellow {
+            background-color: yellow;
+            }
+    </style>
+</head>
+<body>
+    자바스크립트 연습
+    <button class="btn--gray">배경색상 변경 그레이</button>
+    <button class="btn--red">배경색상 변경 빨강</button>
+    <button class="btn--yellow">배경색상 노랑색</button>
+    <button class="btn--reset">배경색상 초기화</button>
+
+
+
+    <script>
+        const btnBgcolor = document.querySelector('.btn--gray')
+        btnBgcolor.addEventListener('click', function(){
+            document.body.classList.toggle('bgcolor--gray');
+        })
+
+        const btnRed = document.querySelector('.btn--red')
+        btnRed.addEventListener('click', function(){
+            document.body.classList.toggle('bgcolor--red');
+        })
+
+        const btnYellow = document.querySelector('.btn--yellow')
+        .addEventListener('click', function(){
+            document.body.classList.toggle('bgcolor--yellow');
+        })
+
+        document.querySelector('.btn--reset').addEventListener('click', function (){
+            document.body.classList.remove('bgcolor--gray', 'bgcolor--red', 'bgcolor--yellow')
+        })
+
+        // 주석처리: 설명글 입력하기 위해 사용
+        // if(273 < 52) {
+        //     alert('273은 52보다 작습니다.')
+        // }
+
+        // if(273 > 52) {
+        //     alert('273은 52보다 큽니다.')
+        // }
+
+        console.log('표현식 273 + 52의 값은 ${273+52}입니다!')
+        console.log(`표현식 273 + 52의 값은 ${273+52}입니다!`)
+        console.log(`표현식 273+52의 값은 ${273+52}입니다!`)
+
+        console.log('표현식 273 + 52의 값은 ${273+52}입니다!')
+
+    // 변수를 선언합니다.
+    let number2 = 10;
+    // 출력합니다.
+    // alert(++number);
+    // number++;
+    // number++;
+    // alert(number++)
+    // alert(number--)
+    // number--
+    // number--
+    // alert(--number)
+
+//let r
+//r = 10
+//
+//let number = 10;
+//concole.log(++number);
+//console.log(number++);
+//console.log(++number);
+//console.log(number--);
+//
+//const input = prompt('메시지를 입력')
+//
+//alert(input)
+//
+//const input2 = confirm("수락하시겠습니까?")
+//
+//alert(input2)
+//
+//
+//    </script>    
+</body>
+</html>
